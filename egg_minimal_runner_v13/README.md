@@ -1,11 +1,16 @@
 
 ### Prerequisites
 
-* 
+* Postgres server 
+* tested with Java 17, Maven 3.5.4 
 
 ### Usage
 
-* 
+* ensure Postgres is running
+* `cd libraries-data-db`
+* set database info in `./setvars.sh` 
+* `. ./init.sh`
+* `./run_simple.sh`
 
 ### Attribution
 
