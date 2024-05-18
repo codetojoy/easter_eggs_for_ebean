@@ -128,7 +128,7 @@
             <id>default-jdk9-and-above</id>
 
             <modules>
-                <module>libraries-data-db</module>
+                <module>ebean-runner</module>
             </modules>
 
             <properties>
