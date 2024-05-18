@@ -1,4 +1,4 @@
-package com.baeldung.libraries.ebean.model;
+package net.codetojoy.ebean.model;
 
 import io.ebean.annotation.WhenCreated;
 import io.ebean.annotation.WhenModified;

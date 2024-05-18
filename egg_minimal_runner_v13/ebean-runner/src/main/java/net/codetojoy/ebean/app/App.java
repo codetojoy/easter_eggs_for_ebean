@@ -1,9 +1,9 @@
-package com.baeldung.libraries.ebean.app;
+package net.codetojoy.ebean.app;
 
 import java.util.*;
 
-import com.baeldung.libraries.ebean.model.Address;
-import com.baeldung.libraries.ebean.model.Customer;
+import net.codetojoy.ebean.model.Address;
+import net.codetojoy.ebean.model.Customer;
 
 import io.ebean.DB;
 import io.ebean.Database;
