@@ -7,7 +7,7 @@
 ### Usage
 
 * ensure Postgres is running
-* `cd libraries-data-db`
+* `cd ebean-runner`
 * set database info in `./setvars.sh` 
 * `. ./init.sh`
 * `./run_simple.sh`

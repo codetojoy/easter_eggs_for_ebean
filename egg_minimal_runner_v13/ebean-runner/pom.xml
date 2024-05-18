@@ -7,7 +7,7 @@
     <name>ebean-runner</name>
 
     <parent>
-        <groupId>com.baeldung</groupId>
+        <groupId>net.codetojoy</groupId>
         <artifactId>spring-boot-3</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../spring-boot-3</relativePath>

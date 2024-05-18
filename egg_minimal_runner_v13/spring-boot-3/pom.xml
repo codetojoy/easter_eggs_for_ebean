@@ -10,7 +10,7 @@
     <description>Parent for all Spring Boot 3 modules</description>
 
     <parent>
-        <groupId>com.baeldung</groupId>
+        <groupId>net.codetojoy</groupId>
         <artifactId>parent-modules</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
