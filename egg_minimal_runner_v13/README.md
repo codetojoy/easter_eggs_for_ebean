@@ -9,7 +9,8 @@
 * ensure Postgres is running
 * `cd ebean-runner`
 * set database info in `./setvars.sh` 
-* `. ./init.sh`
+* `. ./setvars.sh`
+* `./init.sh`
 * `./run_simple.sh`
 
 ### Attribution
