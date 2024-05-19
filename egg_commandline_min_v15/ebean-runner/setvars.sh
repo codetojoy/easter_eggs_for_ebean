@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# these are used by init.sh to generate src/main/resources/ebean.properties
+# these are used by init.sh to generate src/main/resources/application.properties
 
 export DB_USERNAME=CHANGE_ME
 export DB_PASSWORD=CHANGE_ME

@@ -85,7 +85,7 @@
     </build>
 
     <properties>
-        <ebean.plugin.version>13.25.2</ebean.plugin.version>
+        <ebean.plugin.version>15.1.0</ebean.plugin.version>
         <ebean.version>15.1.0</ebean.version>
         <jakarta.xml.bind.version>4.0.1</jakarta.xml.bind.version>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip> <!-- to avoid repackaging of the jar -->
