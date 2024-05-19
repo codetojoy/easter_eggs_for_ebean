@@ -1,0 +1,10 @@
+
+GET     /                           controllers.HomeController.index()
+
+GET     /computers                  controllers.HomeController.list(request: Request, p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
+
+GET     /league                     controllers.LeagueController.list(request: Request)
+GET     /roster                     controllers.RosterController.list(request: Request)
+
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
