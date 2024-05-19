@@ -9,8 +9,8 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
 
 ### Eggs
 
-* egg_minimal_runner_v13 
+* egg_commandline_min_v13
     * uses `javax.persistence`
-* egg_minimal_runner_v15 
+* egg_commandline_min_v15
     * uses `jakarta.persistence`
 
