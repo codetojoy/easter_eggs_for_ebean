@@ -13,4 +13,10 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
     * uses `javax.persistence`
 * egg_commandline_min_v15
     * uses `jakarta.persistence`
+* egg_enum_mapping_v15
+    * demonstrates an enum mapping error
+
+### Resources
+
+* Play-ebean plugin versions [here](https://github.com/playframework/play-ebean)
 
