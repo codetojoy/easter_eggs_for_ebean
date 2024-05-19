@@ -1,0 +1,3 @@
+entity-packages: net.codetojoy.ebean.model
+transactional-packages: net.codetojoy.ebean.app
+querybean-packages: net.codetojoy.ebean.app
