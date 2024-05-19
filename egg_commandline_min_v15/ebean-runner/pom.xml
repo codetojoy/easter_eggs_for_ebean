@@ -5,6 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ebean-runner</artifactId>
     <name>ebean-runner</name>
+    <groupId>net.codetojoy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <parent>
         <groupId>net.codetojoy</groupId>
@@ -32,22 +34,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- Spring Core dependencies -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!-- Spring Data JPA, crud repository -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
         <!-- Utility dependencies -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-        </dependency>
         <dependency>
             <groupId>io.ebean</groupId>
             <artifactId>ebean-api</artifactId>
@@ -88,7 +75,6 @@
         <ebean.plugin.version>15.1.0</ebean.plugin.version>
         <ebean.version>15.1.0</ebean.version>
         <jakarta.xml.bind.version>4.0.1</jakarta.xml.bind.version>
-        <spring-boot.repackage.skip>true</spring-boot.repackage.skip> <!-- to avoid repackaging of the jar -->
     </properties>
 
 </project>
