@@ -53,11 +53,6 @@
             <artifactId>ebean-api</artifactId>
             <version>${ebean.version}</version>
         </dependency>
-        <dependency>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>${jakarta.xml.bind.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -87,7 +82,6 @@
     <properties>
         <ebean.plugin.version>13.25.2</ebean.plugin.version>
         <ebean.version>13.15.2</ebean.version>
-        <jakarta.xml.bind.version>4.0.1</jakarta.xml.bind.version>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip> <!-- to avoid repackaging of the jar -->
     </properties>
 
