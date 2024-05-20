@@ -12,6 +12,10 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- logging -->
+        <org.slf4j.version>2.0.12</org.slf4j.version>
+        <logback.version>1.5.3</logback.version>
     </properties>
 
     <dependencies>
@@ -30,11 +34,35 @@
             <artifactId>ebean</artifactId>
             <version>13.25.0</version>
         </dependency>
+<!--
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
+-->
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${org.slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${org.slf4j.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -62,11 +90,13 @@
                 <version>3.10.1</version>
                 <configuration>
                     <annotationProcessorPaths>
+<!--
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                             <version>1.18.30</version>
                         </path>
+-->
                         <path>
                             <groupId>io.ebean</groupId>
                             <artifactId>querybean-generator</artifactId>
@@ -77,5 +107,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
