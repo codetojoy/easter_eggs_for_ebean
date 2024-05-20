@@ -20,4 +20,4 @@ mvn install
 # process-classes is critical for Ebean enhancement (via plugin)
 mvn clean compile process-classes
 
-mvn exec:java -Dexec.mainClass="net.codetojoy.ebean.Runner"
+mvn exec:java -Dexec.mainClass="net.codetojoy.ebean.app.App"

@@ -1,1 +1,1 @@
-entity-packages: net.codetojoy.ebean.models
+entity-packages: net.codetojoy.ebean.model
