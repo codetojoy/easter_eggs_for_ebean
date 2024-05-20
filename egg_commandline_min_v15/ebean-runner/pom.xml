@@ -40,11 +40,6 @@
             <artifactId>ebean-api</artifactId>
             <version>${ebean.version}</version>
         </dependency>
-        <dependency>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>${jakarta.xml.bind.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -74,7 +69,6 @@
     <properties>
         <ebean.plugin.version>15.1.0</ebean.plugin.version>
         <ebean.version>15.1.0</ebean.version>
-        <jakarta.xml.bind.version>4.0.1</jakarta.xml.bind.version>
     </properties>
 
 </project>

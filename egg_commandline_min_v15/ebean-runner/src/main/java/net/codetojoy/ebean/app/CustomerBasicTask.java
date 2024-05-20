@@ -7,7 +7,7 @@ import net.codetojoy.ebean.model.*;
 
 import io.ebean.DB;
 
-class CustomerTask implements Callable<Boolean> {
+class CustomerBasicTask implements Callable<Boolean> {
     
     public Boolean call() {
         Boolean result = false;
