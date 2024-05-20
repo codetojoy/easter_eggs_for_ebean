@@ -1,14 +1,15 @@
-package org.example.ebean;
+package net.codetojoy.ebean;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import io.ebean.Database;
 import io.ebean.config.UnderscoreNamingConvention;
-import org.example.ebean.entities.*;
+
+import net.codetojoy.ebean.models.*;
 
 import javax.sql.DataSource;
 
-public class Example {
+public class Runner {
 
     public static void main(String[] args) {
         DataSource ds = buildDataSource();

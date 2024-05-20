@@ -1,4 +1,4 @@
-package org.example.ebean.entities;
+package net.codetojoy.ebean.models;
 
 import javax.persistence.Entity;
 

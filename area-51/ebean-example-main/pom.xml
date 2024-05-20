@@ -4,14 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>EbeanTest</artifactId>
+    <groupId>net.codetojoy.ebean</groupId>
+    <artifactId>ebean-sandbox</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Ebean -->
+        <ebean.version>13.25.0</ebean.version>
+
+        <!-- db related -->
+        <pg.driver.version>42.7.1</pg.driver.version>
+        <hikari.cp.version>5.1.0</hikari.cp.version>
 
         <!-- logging -->
         <org.slf4j.version>2.0.12</org.slf4j.version>
@@ -22,25 +29,18 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.7.1</version>
+            <version>${pg.driver.version}</version>
         </dependency>
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>5.1.0</version>
+            <version>${hikari.cp.version}</version>
         </dependency>
         <dependency>
             <groupId>io.ebean</groupId>
             <artifactId>ebean</artifactId>
-            <version>13.25.0</version>
+            <version>${ebean.version}</version>
         </dependency>
-<!--
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-        </dependency>
--->
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -70,7 +70,7 @@
             <plugin>
                 <groupId>io.ebean</groupId>
                 <artifactId>ebean-maven-plugin</artifactId>
-                <version>13.25.0</version>
+                <version>${ebean.version}</version>
                 <executions>
                     <execution>
                         <id>main</id>
@@ -90,17 +90,10 @@
                 <version>3.10.1</version>
                 <configuration>
                     <annotationProcessorPaths>
-<!--
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.30</version>
-                        </path>
--->
                         <path>
                             <groupId>io.ebean</groupId>
                             <artifactId>querybean-generator</artifactId>
-                            <version>13.25.0</version>
+                            <version>${ebean.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
