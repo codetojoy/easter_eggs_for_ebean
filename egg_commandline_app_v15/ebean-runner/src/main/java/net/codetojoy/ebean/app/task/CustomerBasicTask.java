@@ -1,16 +1,17 @@
-package net.codetojoy.ebean.app;
+package net.codetojoy.ebean.app.task;
 
 import java.util.*;
-import java.util.concurrent.Callable;
 
 import net.codetojoy.ebean.model.*;
 
-import io.ebean.DB;
+import io.ebean.*;
 
-class CustomerBasicTask implements Callable<Boolean> {
+public class CustomerBasicTask implements Task {
     
-    public Boolean call() {
+    @Override
+    public boolean run() {
         Boolean result = false;
+
         List<Customer> customers = DB.find(Customer.class)
                                      .select("name, id, email")
                                      .findList();

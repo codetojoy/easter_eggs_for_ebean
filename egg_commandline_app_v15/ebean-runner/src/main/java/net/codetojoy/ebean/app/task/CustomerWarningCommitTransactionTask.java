@@ -1,4 +1,4 @@
-package net.codetojoy.ebean.app;
+package net.codetojoy.ebean.app.task;
 
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -11,9 +11,10 @@ import io.ebean.*;
 // see https://javadoc.io/doc/io.ebean/ebean-api/13.25.0/io.ebean.api/io/ebean/DB.html
 // this code illustrates the migration path: using try-resources
 
-class CustomerWarningCommitTransactionTask implements Callable<Boolean> {
+public class CustomerWarningCommitTransactionTask implements Task {
     
-    public Boolean call() {
+    @Override
+    public boolean run() {
         Boolean result = false;
 
         try (Transaction transaction = DB.beginTransaction()) {

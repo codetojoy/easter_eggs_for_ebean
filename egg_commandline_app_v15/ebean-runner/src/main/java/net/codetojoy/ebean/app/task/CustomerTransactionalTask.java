@@ -1,7 +1,6 @@
-package net.codetojoy.ebean.app;
+package net.codetojoy.ebean.app.task;
 
 import java.util.*;
-import java.util.concurrent.Callable;
 
 import net.codetojoy.ebean.model.*;
 
@@ -9,9 +8,11 @@ import io.ebean.DB;
 import io.ebean.Database;
 import io.ebean.annotation.Transactional;
 
-class CustomerTransactionalTask implements Callable<Boolean> {
+public class CustomerTransactionalTask implements Task {
     
-    public Boolean call() {
+    @Override
+    @Transactional
+    public boolean run() {
         Boolean result = false;
 
         Customer customer = new Customer();

@@ -1,18 +1,18 @@
-package net.codetojoy.ebean.app;
+package net.codetojoy.ebean.app.task;
 
 import java.util.*;
-import java.util.concurrent.Callable;
 
 import net.codetojoy.ebean.model.*;
 
-import io.ebean.DB;
+import io.ebean.*;
 
 // in Ebean 15.3.0 `.order("name")` generates a deprecation warning
 // prefer: `.orderBy("name")`
 
-class CustomerWarningOrderTask implements Callable<Boolean> {
+public class CustomerWarningOrderTask implements Task { 
     
-    public Boolean call() {
+    @Override
+    public boolean run() {
         Boolean result = false;
         List<Customer> customers = DB.find(Customer.class)
                                      .select("name, id, email")
