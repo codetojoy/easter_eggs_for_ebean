@@ -6,12 +6,14 @@
 
 ### Usage
 
-* ensure Postgres is running
-* `cd ebean-runner`
-* set database info in `./setvars.sh` 
-* `. ./setvars.sh`
-* `./init.sh`
-* `./run_simple.sh`
+* confirm Postgres is running and populated
+* confirm desired Ebean version in `./ebean-runner/pom.xml` (e.g. 15.1.0 vs 15.3.0)
+* set database info in `./ebean-runner/setvars.sh` 
+* in Terminal: 
+    * `cd ebean-runner`
+    * `. ./setvars.sh`
+    * `./init.sh`
+    * `./run_simple.sh`
 
 ### Attribution
 

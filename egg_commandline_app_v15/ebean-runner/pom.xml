@@ -67,8 +67,8 @@
     </build>
 
     <properties>
-        <ebean.plugin.version>15.1.0</ebean.plugin.version>
-        <ebean.version>15.1.0</ebean.version>
+        <ebean.plugin.version>15.3.0</ebean.plugin.version>
+        <ebean.version>15.3.0</ebean.version>
     </properties>
 
 </project>
