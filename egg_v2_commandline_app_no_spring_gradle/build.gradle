@@ -14,7 +14,7 @@ project.ext.slf4jVersion = "2.0.12"
 project.ext.avajeLogbackVersion = "1.1"
 
 application {
-    mainClass = 'net.codetojoy.ebean.app.App'
+    mainClass = 'app.App'
 }
 
 repositories {

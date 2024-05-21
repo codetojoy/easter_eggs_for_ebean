@@ -1,8 +1,8 @@
-package net.codetojoy.ebean.app.tasks;
+package app.tasks;
 
 import java.util.*;
 
-import net.codetojoy.ebean.models.*;
+import models.*;
 
 import io.ebean.DB;
 import io.ebean.Database;
