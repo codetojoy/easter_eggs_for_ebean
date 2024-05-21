@@ -11,7 +11,7 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
 ### Eggs
 
 * egg_v2_commandline_app_no_spring_gradle
-    * RECOMMENDED: start with this one
+    * *RECOMMENDED: start with this one*
     * no Spring Boot, simple project structure
     * uses Gradle: very fast
     * use-cases are written as tasks

@@ -1,11 +1,18 @@
 
+### Info
+
 * derived from [this repo](https://github.com/TuxGamer/ebean-example)
 * tested with Java 21, Gradle 8.4
+
+### Prerequisites
+
+* ensure database is running and populated with data
 
 ### Usage
 
 * set Ebean version in `build.gradle`
-* write desired Ebean code in `net.codetojoy.ebean.app.tasks`
+* create desired mapping code in `net.codetjoy.ebean.app.models` 
+* write desired Ebean queries/operations in `net.codetojoy.ebean.app.tasks`
 * change `App.java` to use the new task
 * edit 'setvars.sh' with db credentials
 * at Terminal:
