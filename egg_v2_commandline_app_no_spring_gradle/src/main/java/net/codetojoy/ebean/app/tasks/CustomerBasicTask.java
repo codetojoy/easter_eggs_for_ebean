@@ -17,7 +17,7 @@ public class CustomerBasicTask implements Task {
                                      .findList();
 
         for (Customer customer : customers) {
-            System.out.println("TRACER VICTORY: " + customer.toString());
+            System.out.println("TRACER customer: " + customer.toString());
         }
         result = true;
 
