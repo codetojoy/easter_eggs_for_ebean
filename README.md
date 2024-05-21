@@ -10,11 +10,16 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
 
 ### Eggs
 
+*RECOMMENDED*. Start with this example, as it is the simplest, and fastest: 
+
 * egg_v2_commandline_app_no_spring_gradle
-    * **RECOMMENDED**: start with this example 
     * no Spring Boot, simple project structure
     * uses Gradle: very fast
     * use-cases are written as tasks
+    * derived from [this repo](https://github.com/TuxGamer/ebean-example)
+
+These command-line examples use Maven and often Spring Boot (from the [original work](https://www.baeldung.com/ebean-orm)).
+
 * egg_commandline_app_v15
     * uses `jakarta.persistence`
     * use-cases are written as tasks
@@ -25,14 +30,15 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
     * uses `javax.persistence`
 * egg_commandline_app_v12
     * uses `javax.persistence`
-* egg_enum_mapping_v15
-    * demonstrates an enum mapping error
+
+Examples with the Play Framework (useful when working with Play, as jar versions are curated): 
+
 * egg_enum_mapping_play_v29x
     * uses Play as a basic driver to experiment with Ebean
-    * See LeagueController, RosterController
+    * See `LeagueController`, `RosterController`
 * egg_enum_mapping_vplay_v30x
     * uses Play as a basic driver to experiment with Ebean
-    * See LeagueController, RosterController
+    * See `LeagueController`, `RosterController`
 
 ### Resources
 
