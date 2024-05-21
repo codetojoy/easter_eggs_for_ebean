@@ -18,7 +18,7 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
     * use-cases are written as tasks
     * derived from [this repo](https://github.com/TuxGamer/ebean-example)
 
-These command-line examples use Maven and often Spring Boot (from the [original work](https://www.baeldung.com/ebean-orm)).
+These command-line examples use Maven and often Spring Boot (from the [original work](https://www.baeldung.com/ebean-orm)):
 
 * egg_commandline_app_v15
     * uses `jakarta.persistence`
