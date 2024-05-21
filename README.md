@@ -14,7 +14,11 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
     * the most advanced example
     * uses `jakarta.persistence`
     * use-cases are written as tasks
-* v2-no-spring-experimental
+* egg_v2_commandline_app_no_spring_gradle
+    * no Spring Boot, simple project structure
+    * Gradle: very fast
+    * use-cases are written as tasks
+* egg_v2_commandline_app_no_spring_experimental
     * no Spring Boot: much simpler Maven structure
     * use-cases are written as tasks
 * egg_commandline_app_v13
