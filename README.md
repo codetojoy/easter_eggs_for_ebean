@@ -10,7 +10,7 @@ Some basic examples for Ebean. Usage of *egg* here is [SSCCE](http://sscce.org/)
 
 ### Eggs
 
-*RECOMMENDED*. Start with this example, as it is the simplest, and fastest: 
+**RECOMMENDED: start here**. This example is the simplest and fastest: 
 
 * egg_v2_commandline_app_no_spring_gradle
     * no Spring Boot, simple project structure
