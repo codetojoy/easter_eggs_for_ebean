@@ -1,7 +1,7 @@
 package net.codetojoy.ebean.app;
 
-import net.codetojoy.ebean.model.*;
-import net.codetojoy.ebean.app.task.*;
+import net.codetojoy.ebean.models.*;
+import net.codetojoy.ebean.app.tasks.*;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

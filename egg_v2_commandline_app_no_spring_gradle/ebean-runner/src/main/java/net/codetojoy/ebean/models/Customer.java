@@ -1,4 +1,4 @@
-package net.codetojoy.ebean.model;
+package net.codetojoy.ebean.models;
 
 import jakarta.persistence.Entity;
 

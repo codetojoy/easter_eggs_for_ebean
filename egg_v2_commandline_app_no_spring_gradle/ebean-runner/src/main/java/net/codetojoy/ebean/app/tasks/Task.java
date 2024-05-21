@@ -1,4 +1,4 @@
-package net.codetojoy.ebean.app.task;
+package net.codetojoy.ebean.app.tasks;
 
 import io.ebean.Database;
 
