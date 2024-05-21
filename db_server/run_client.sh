@@ -11,7 +11,7 @@ function check_env_var () {
     fi
 }
 
-check_env_var "$DB_USERNAME" "DB__USERNAME"
+check_env_var "$DB_USERNAME" "DB_USERNAME"
 check_env_var "$DB_PASSWORD" "DB_PASSWORD"
 
 pgcli postgresql://$DB_USERNAME:$DB_PASSWORD@localhost:5432/postgres
