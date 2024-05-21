@@ -1,8 +1,17 @@
+
 plugins {
     id("java")
     id("io.ebean") version "15.3.0"
     id("application")
 }
+
+project.ext.ebeanVersion = "15.3.0"
+
+project.ext.pgVersion = "42.7.1"
+project.ext.hikariVersion = "5.1.0"
+project.ext.logbackVersion = "1.5.3"
+project.ext.slf4jVersion = "2.0.12"
+project.ext.avajeLogbackVersion = "1.1"
 
 application {
     mainClass = 'net.codetojoy.ebean.app.App'
@@ -18,21 +27,19 @@ compileJava {
 }
 
 dependencies {
-    annotationProcessor "io.ebean:querybean-generator:15.3.0"
+    annotationProcessor "io.ebean:querybean-generator:${ebeanVersion}"
 
-    implementation "org.avaje.composite:logback:1.1" 
+    implementation "io.ebean:ebean:${ebeanVersion}"
+    implementation "io.ebean:ebean-querybean:${ebeanVersion}"
 
-    implementation "io.ebean:ebean:15.3.0"
-    implementation "io.ebean:ebean-querybean:15.3.0"
+    implementation "org.postgresql:postgresql:${pgVersion}"
+    implementation "com.zaxxer:HikariCP:${hikariVersion}"
 
-    implementation "org.postgresql:postgresql:42.7.1" 
-    implementation "com.zaxxer:HikariCP:5.1.0" 
-    implementation "io.ebean:ebean:15.3.0"
-
-    implementation "ch.qos.logback:logback-classic:1.5.3"
-    implementation "ch.qos.logback:logback-core:1.5.3"
-    implementation "org.slf4j:slf4j-api:2.0.12"
-    implementation "org.slf4j:jcl-over-slf4j:2.0.12"
+    implementation "org.avaje.composite:logback:${avajeLogbackVersion}"
+    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+    implementation "ch.qos.logback:logback-core:${logbackVersion}"
+    implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+    implementation "org.slf4j:jcl-over-slf4j:${slf4jVersion}"
 
     // testImplementation("io.ebean:ebean-test:12.6.5")
     // testImplementation('org.avaje.composite:junit:1.1')
