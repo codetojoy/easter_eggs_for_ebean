@@ -11,8 +11,8 @@
 ### Usage
 
 * set Ebean version in `build.gradle`
-* create desired mapping code in `net.codetjoy.ebean.app.models` 
-* write desired Ebean queries/operations in `net.codetojoy.ebean.app.tasks`
+* create desired mapping code in `app.models` 
+* write desired Ebean queries/operations in `app.tasks`
 * change `App.java` to use the new task
 * edit 'setvars.sh' with db credentials
 * at Terminal:
